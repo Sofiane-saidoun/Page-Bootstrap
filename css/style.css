@@ -87,35 +87,45 @@ section#contact a {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-
+a.gth {
+  background: url(../img/social_media.png) 0px top;
+}
+a.lnk {
+  background: url(../img/social_media.png) -384px top;
+}
 a.fb {
-  background: url(img/social_media.png) -256px top;
+  background: url(../img/social_media.png) -256px top;
 }
 
 a.tw {
-  background: url(img/social_media.png) -512px top;
+  background: url(../img/social_media.png) -512px top;
 }
 
 a.go {
-  background: url(img/social_media.png) -768px top;
+  background: url(../img/social_media.png) -768px top;
 }
 
 a.ytube {
-  background: url(img/social_media.png) -640px top;
+  background: url(../img/social_media.png) -640px top;
 }
-
+section#contact li:hover a.gth {
+  background: url(../img/social_media.png) 0 bottom;
+}
+section#contact li:hover a.lnk {
+  background: url(../img/social_media.png) -384px bottom;
+}
 section#contact li:hover a.fb {
-  background: url(img/social_media.png) -256px bottom;
+  background: url(../img/social_media.png) -256px bottom;
 }
 
 section#contact li:hover a.tw {
-  background: url(img/social_media.png) -512px bottom;
+  background: url(../img/social_media.png) -512px bottom;
 }
 
 section#contact li:hover a.ytube {
-  background: url(img/social_media.png) -640px bottom;
+  background: url(../img/social_media.png) -640px bottom;
 }
 
 section#contact li:hover a.go {
-  background: url(img/social_media.png) -768px bottom;
+  background: url(../img/social_media.png) -768px bottom;
 }
