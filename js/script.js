@@ -21,21 +21,38 @@ $(document).ready(function () {
   };
 
   /* page scroll on click */
+
   var scroll = function () {
     $(".page-scroll a").click(function (event) {
       event.preventDefault();
       var $anchor = $(this);
-      console.log($(this).attr("href"));
+
       $("html, body").animate(
         {
           scrollTop: $($anchor.attr("href")).offset().top,
         },
-        1000,
-        "easeInOutExpo"
+        1000
       );
     });
   };
 
-  changeColor();
+  /*
+  var scroll = function () {
+    $(".page-scroll a").bind("click", function (event) {
+      var $anchor = $(this);
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $($anchor.attr("href")).offset().top,
+          },
+          1000
+        );
+      event.preventDefault();
+    });
+  };
+*/
   scroll();
+
+  changeColor();
 });

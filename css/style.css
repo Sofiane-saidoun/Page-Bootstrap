@@ -80,6 +80,7 @@ p:last-of-type {
 /* header */
 .bg {
   background: url("../img/bg-mountain-clouds.jpg") 20% 40%;
+  height: 100vh;
 }
 
 .bg-fixed {
