@@ -26,12 +26,13 @@ $(document).ready(function () {
 
 
   var scroll = function scroll() {
-    $(".page-scroll a").bind("click", function (event) {
+    $(".page-scroll a").click(function (event) {
+      event.preventDefault();
       var $anchor = $(this);
-      $("html, body").stop().animate({
+      console.log($(this).attr("href"));
+      $("html, body").animate({
         scrollTop: $($anchor.attr("href")).offset().top
       }, 1000, "easeInOutExpo");
-      event.preventDefault();
     });
   };
 
